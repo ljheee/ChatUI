@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp">
+    
+     <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:src="@drawable/ic_launcher"/>
+       
+        <TextView
+            android:id="@+id/left_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/message_left"
+            android:textColor="#e4e" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal" >
+        
+         <!-- 单条消息文本：maxWidth为屏幕宽度的0.8 -->
+        <TextView
+            android:id="@+id/right_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="250"
+            android:layout_margin="10dp"
+            android:background="@drawable/message_right"
+            android:textColor="#e4e"/>
+        
+        <!-- 用户头像 :大小固定-->
+        <ImageView 
+            android:layout_width="50dp"
+        	android:layout_height="50dp"
+        	android:layout_gravity="right"
+        	android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+</LinearLayout>
